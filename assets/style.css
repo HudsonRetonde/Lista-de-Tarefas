@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
-  --primary-color: rgb(17, 86, 102);
-  --primary-color-darker: rgb(9, 48, 56);
+  --primary-color: #005C97;
+  --primary-color-darker: #363795;
 }
 
 * {
@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  background-image: linear-gradient(to right, #1e130c 0%, #9a8478  51%, #1e130c  100%);
+  background-image: linear-gradient(to right, #005C97 0%, #363795  51%, #005C97  100%);
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
@@ -20,28 +20,37 @@ body {
 .container {
   max-width: 640px;
   margin: 50px auto;
-  background: rgb(146, 146, 144);
+  background: rgb(214, 214, 212);
   padding: 20px;
   border-radius: 10px;
 }
 
-form input, form label, form button {
+h1 {
+  color: var(--primary-color);
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+input, button {
   display: block;
   width: 100%;
   margin-bottom: 10px;
 }
 
-form input {
+input {
   font-size: 24px;
   height: 50px;
   padding: 0 20px;
 }
 
-form input:focus {
+input:focus {
   outline: 1px solid var(--primary-color);
 }
 
-form button {
+button, li button {
   border: none;
   background: var(--primary-color);
   color: #fff;
@@ -53,7 +62,8 @@ form button {
   border-radius: 4px;
 }
 
-form button:hover {
-  background: var(--primary-color-darker);
-  color: yellowgreen;
+button:hover {
+  background: yellowgreen;
+  color: rgb(12, 12, 12);
+  transition-duration: 1s;
 }
